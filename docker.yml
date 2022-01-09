@@ -66,6 +66,6 @@
         group: docker
         append: yes
  
-    - name: Build and run dockerfile
+    - name: Build and run docker
       include_role:
-        name: dockerfile
+        name: docker
