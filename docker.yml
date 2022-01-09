@@ -60,12 +60,12 @@
         name: docker
         state: present
 
-    - name: Ad user into docker group
+    - name: Add user into docker group
       user:
         name: elijah
         group: docker
         append: yes
  
-    - name: Build and run docker
+    - name: Build and run dockerfile
       include_role:
-        name: docker
+        name: dockerfile
